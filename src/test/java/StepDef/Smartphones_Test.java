@@ -38,24 +38,24 @@ public class Smartphones_Test {
         Assert.assertTrue(smartphones.MobileNumber().isDisplayed());
     }
 
-    @Then("Input the Mobile Number")
-    public void inputTheMobileNumber() throws InterruptedException {
-        Thread.sleep(wait);
-        smartphones.MobileNumber().sendKeys("01749653931");
+    @Then("Input the Email address")
+    public void InputtheEmailaddress() {
+        testContextSetup.testBase.waitForVisibility(
+            smartphones.MobileNumber(), 10).sendKeys("habib.qtec@gmail.com");
     }
 
     @And("Input The Password")
-    public void inputThePassword() throws InterruptedException {
-        Thread.sleep(wait);
-        smartphones.Password_().sendKeys("sadi1234");
+    public void inputThePassword() {
+        testContextSetup.testBase.waitForVisibility(
+            smartphones.Password_(), 10).sendKeys("asdfgh");
     }
 
     @When("Click SIGN IN")
-    public void clickSIGNIN() throws InterruptedException {
-        Thread.sleep(wait);
-        smartphones.SingnIN_().click();
-        System.out.println(driver.getCurrentUrl());
+    public void clickSIGNIN() {
+        testContextSetup.testBase.waitForClickability(smartphones.SingnIN_(), 10).click();
+        // System.out.println(driver.getCurrentUrl());
     }
+    
 
     ////////////////////////////////////Test Case-1///////////////////////////////////
 

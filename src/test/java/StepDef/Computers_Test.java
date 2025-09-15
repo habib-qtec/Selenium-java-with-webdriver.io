@@ -25,7 +25,7 @@ public class Computers_Test {
     private WebDriver driver;
     private Computers computers;
     private HTML_TO_PDF html_to_pdf ;
-    private int wait = 3000;
+    private int wait = 1000;
 
 
     public Computers_Test(TestContextSetup testContextSetup) {
@@ -36,9 +36,9 @@ public class Computers_Test {
 
     ////////////////////////////////////Test Case-1///////////////////////////////////
 
-    @Given("Check that Computers section is displayed")
-    public void checkThatComputersSectionIsDisplayed() throws InterruptedException {
-        Thread.sleep(wait);
+    @Given("Check that amal logo is displayed")
+    public void Checkthatamallogoisdisplayed() throws InterruptedException {
+        // Thread.sleep(wait);
         Assert.assertTrue(computers.Pricing().isDisplayed());
         Thread.sleep(wait);
     }

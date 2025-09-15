@@ -20,7 +20,7 @@ import org.testng.annotations.Listeners;
 public class TestRunner extends AbstractTestNGCucumberTests {
 
     @Override
-    @DataProvider(parallel = false) // Set parallel execution (true for parallel)
+    @DataProvider(parallel = false) // Set parallel execution (true for parallel)(multi window)
     public Object[][] scenarios() {
         return super.scenarios();
     }

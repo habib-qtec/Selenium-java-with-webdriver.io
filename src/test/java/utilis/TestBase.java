@@ -54,6 +54,7 @@ package utilis;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -105,6 +106,21 @@ public class TestBase {
 
         return driver;
     }
+
+
+
+    // ✅ Common explicit wait method for visibility
+    public WebElement waitForVisibility(WebElement element, int timeoutInSeconds) {
+        WebDriverWait localWait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        return localWait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    // ✅ Common explicit wait method for clickability
+    public WebElement waitForClickability(WebElement element, int timeoutInSeconds) {
+        WebDriverWait localWait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        return localWait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
 
     public void CloseDriver() {
         if (driver != null) {

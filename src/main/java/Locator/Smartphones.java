@@ -11,9 +11,9 @@ public class Smartphones {
     @Getter
     WebDriver driver;
 
-    By MobileNumber = By.xpath("body > div:nth-child(2) > header:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) > svg:nth-child(1) > g:nth-child(2) > path:nth-child(11)");
-    By Pass = By.xpath("//input[@placeholder='Password']");
-    By Sign_In = By.xpath("//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text custom-buttons']");
+    By MobileNumber = By.xpath("//input[@id='email']");
+    By Pass = By.xpath("//input[@id='password']");
+    By Sign_In = By.xpath("//button[@class='authactionbtn ']");
 
     By Smartphones = By.xpath("//div[@class='home-banner__menu']//a[@class='a-tag'][normalize-space()='Smartphones']");
     By Cameraphone = By.xpath("//h4[normalize-space()='Camera Phone']");

@@ -1,16 +1,16 @@
-Feature: Verify Pickaboo Computers Section work properly
+Feature: Verify My assitant module work properly
 
   Background:
-    Given Check that Computers section is displayed
-  #   # Then Input the Mobile Number
-  #   # And  Input The Password
-  #   # When Click SIGN IN
+    # Given Check that amal logo is displayed
+    Then Input the Email address
+    And  Input The Password
+    When Click SIGN IN
 
 
   # Test Case 1
   @Release
   Scenario: Verify that the Computers section is displayed properly
-    Given Check that Computers section is displayed
+    Given Check that amal logo is displayed
   #   When Click on Computers section
   #   Then Check that First Computers section is displayed
   #   When Click on First Computers section

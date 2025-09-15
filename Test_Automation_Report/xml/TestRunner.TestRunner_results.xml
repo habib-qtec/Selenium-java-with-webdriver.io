@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="28.226">
+           time="8.308">
     <properties></properties>
 
 
 
             <testcase
                 name="runScenario"
-                time="28.226"
+                time="8.308"
                 classname="TestRunner.TestRunner">
             </testcase>
 </testsuite>

@@ -11,7 +11,7 @@ public class Computers {
     WebDriver driver;
 
 
-    By Pricing = By.xpath("//a[@class='whitespace-nowrap hover:underline text-white']");
+    By Pricing = By.xpath("//img[@alt='amal logo']");
 
 
 
